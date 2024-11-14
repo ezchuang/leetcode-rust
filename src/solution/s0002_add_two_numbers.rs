@@ -1,4 +1,4 @@
-use crate::util::linked_list::{to_list, ListNode};
+use crate::util::linked_list::ListNode;
 
 pub struct Solution {}
 
@@ -37,6 +37,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::util::linked_list::to_list;
 
     #[test]
     fn test_2() {
