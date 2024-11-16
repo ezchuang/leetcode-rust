@@ -35,25 +35,39 @@ impl Solution {
     //     dummy_head.next
     // }
 
-    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        match (list1, list2) {
-            (None, None) => None,
-            (Some(l1), None) => Some(l1),
-            (None, Some(l2)) => Some(l2),
-            (Some(l1), Some(l2)) => {
-                if l1.val < l2.val {
-                    return Some(Box::new(ListNode {
-                        val:l1.val, 
-                        next: Solution::merge_two_lists(l1.next, Some(l2))
-                    }))
-                } else {
-                    return Some(Box::new(ListNode {
-                        val:l2.val, 
-                        next: Solution::merge_two_lists(Some(l1), l2.next)
-                    }))
-                }
+    // pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    //     match (list1, list2) {
+    //         (None, None) => None,
+    //         (Some(l1), None) => Some(l1),
+    //         (None, Some(l2)) => Some(l2),
+    //         (Some(l1), Some(l2)) => {
+    //             if l1.val < l2.val {
+    //                 return Some(Box::new(ListNode {
+    //                     val:l1.val, 
+    //                     next: Solution::merge_two_lists(l1.next, Some(l2))
+    //                 }))
+    //             } else {
+    //                 return Some(Box::new(ListNode {
+    //                     val:l2.val, 
+    //                     next: Solution::merge_two_lists(Some(l1), l2.next)
+    //                 }))
+    //             }
+    //         }
+    //     }
+    // }
+
+    // ref: https://leetcode.com/problems/merge-two-sorted-lists/solutions/2947855/simple-and-efficient-rust-8-liner/
+    pub fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut curr = &mut list1; // calculate base on 1st node of list1 (it can be another one)
+
+        while list2.is_some() { // if list2 is None, end the compare and swap
+            if curr.is_none() || list2.as_ref()?.val < curr.as_ref()?.val { // continue to swap the tails of these two
+                std::mem::swap(curr, &mut list2);
             }
+            curr = &mut curr.as_mut()?.next; // move ptr to the next
         }
+
+        list1
     }
 }
 
