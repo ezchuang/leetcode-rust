@@ -4,35 +4,56 @@ use crate::util::linked_list::ListNode;
 
 impl Solution {
     // try not to mutate parameters
+    // pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    //     let (mut list1, mut list2) = (list1.as_ref(), list2.as_ref());
+    //     let mut dummy_head = Box::new(ListNode::new(0));
+    //     let mut curr = &mut dummy_head;
+
+    //     while let (Some(list1_node), Some(list2_node)) = (list1, list2) {
+    //         if list1_node.val <= list2_node.val {
+    //             curr.next = Some(Box::new(ListNode::new(list1_node.val)));
+    //             list1 = list1_node.next.as_ref();
+    //         } else {
+    //             curr.next = Some(Box::new(ListNode::new(list2_node.val)));
+    //             list2 = list2_node.next.as_ref();
+    //         }
+    //         curr = curr.next.as_mut().unwrap();
+    //     }
+
+    //     while let Some(list1_node) = list1 {
+    //         curr.next = Some(Box::new(ListNode::new(list1_node.val)));
+    //         list1 = list1_node.next.as_ref();
+    //         curr = curr.next.as_mut().unwrap();
+    //     }
+
+    //     while let Some(list2_node) = list2 {
+    //         curr.next = Some(Box::new(ListNode::new(list2_node.val)));
+    //         list2 = list2_node.next.as_ref();
+    //         curr = curr.next.as_mut().unwrap();
+    //     }
+
+    //     dummy_head.next
+    // }
+
     pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let (mut list1, mut list2) = (list1.as_ref(), list2.as_ref());
-        let mut dummy_head = Box::new(ListNode::new(0));
-        let mut curr = &mut dummy_head;
-
-        while let (Some(list1_node), Some(list2_node)) = (list1, list2) {
-            if list1_node.val <= list2_node.val {
-                curr.next = Some(Box::new(ListNode::new(list1_node.val)));
-                list1 = list1_node.next.as_ref();
-            } else {
-                curr.next = Some(Box::new(ListNode::new(list2_node.val)));
-                list2 = list2_node.next.as_ref();
+        match (list1, list2) {
+            (None, None) => None,
+            (Some(l1), None) => Some(l1),
+            (None, Some(l2)) => Some(l2),
+            (Some(l1), Some(l2)) => {
+                if l1.val < l2.val {
+                    return Some(Box::new(ListNode {
+                        val:l1.val, 
+                        next: Solution::merge_two_lists(l1.next, Some(l2))
+                    }))
+                } else {
+                    return Some(Box::new(ListNode {
+                        val:l2.val, 
+                        next: Solution::merge_two_lists(Some(l1), l2.next)
+                    }))
+                }
             }
-            curr = curr.next.as_mut().unwrap();
         }
-
-        while let Some(list1_node) = list1 {
-            curr.next = Some(Box::new(ListNode::new(list1_node.val)));
-            list1 = list1_node.next.as_ref();
-            curr = curr.next.as_mut().unwrap();
-        }
-
-        while let Some(list2_node) = list2 {
-            curr.next = Some(Box::new(ListNode::new(list2_node.val)));
-            list2 = list2_node.next.as_ref();
-            curr = curr.next.as_mut().unwrap();
-        }
-
-        dummy_head.next
     }
 }
 
