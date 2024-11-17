@@ -57,17 +57,42 @@ impl Solution {
     // }
 
     // ref: https://leetcode.com/problems/merge-two-sorted-lists/solutions/2947855/simple-and-efficient-rust-8-liner/
+    // pub fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    //     let mut curr = &mut list1; // calculate base on 1st node of list1 (it can be another one)
+
+    //     while list2.is_some() { // if list2 is None, end the compare and swap
+    //         if curr.is_none() || list2.as_ref()?.val < curr.as_ref()?.val { // continue to swap the tails of these two
+    //             std::mem::swap(curr, &mut list2);
+    //         }
+    //         curr = &mut curr.as_mut()?.next; // move ptr to the next
+    //     }
+
+    //     list1
+    // }
+
     pub fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let mut curr = &mut list1; // calculate base on 1st node of list1 (it can be another one)
+        let mut dummy_head = Box::new(ListNode::new(0));
+        let mut curr = &mut dummy_head;
 
-        while list2.is_some() { // if list2 is None, end the compare and swap
-            if curr.is_none() || list2.as_ref()?.val < curr.as_ref()?.val { // continue to swap the tails of these two
-                std::mem::swap(curr, &mut list2);
+        while list1.is_some() && list2.is_some() {
+            let val1 = list1.as_ref().unwrap().val;
+            let val2 = list2.as_ref().unwrap().val;
+
+            if val1 < val2 {
+                let mut l1 = list1.take().unwrap();
+                list1 = l1.next.take();
+                curr.next = Some(l1);
+            } else {
+                let mut l2 = list2.take().unwrap();
+                list2 = l2.next.take();
+                curr.next = Some(l2);
             }
-            curr = &mut curr.as_mut()?.next; // move ptr to the next
+            curr = curr.next.as_mut().unwrap();
+            
         }
+        curr.next = if list1.is_some() { list1 } else { list2 };
 
-        list1
+        dummy_head.next
     }
 }
 
