@@ -5,3 +5,4 @@ mod s0013_roman_to_int;
 mod s0020_valid_parentheses;
 mod s0021_merge_two_lists;
 mod s0024_swap_pairs;
+mod s0031;
