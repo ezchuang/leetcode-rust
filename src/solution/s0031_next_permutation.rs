@@ -39,7 +39,7 @@ impl Solution {
             nums.swap(n - 1, m);
         }
 
-        nums[n..m+1].reverse();
+        nums[n..].reverse();
     }
 }
 
