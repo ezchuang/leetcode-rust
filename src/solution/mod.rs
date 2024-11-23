@@ -7,4 +7,5 @@ mod s0021_merge_two_lists;
 mod s0024_swap_pairs;
 mod s0031_next_permutation;
 mod s0039_combination_sum;
+mod s0040_combination_sum_ii;
 mod s0045_jump_game_ii;
