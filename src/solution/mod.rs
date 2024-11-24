@@ -9,3 +9,4 @@ mod s0031_next_permutation;
 mod s0039_combination_sum;
 mod s0040_combination_sum_ii;
 mod s0045_jump_game_ii;
+mod s0061_rotate_right;
