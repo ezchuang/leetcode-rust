@@ -1,1 +1,71 @@
-/target
+# ---- OS / Editor ----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux 排程與檔案同步暫存
+*~
+.nfs*
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.sw?
+*.swo
+
+# Logs / temp
+*.log
+*.tmp
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+# Virtual env
+env/
+venv/
+.venv/
+# PyTest cache
+.pytest_cache/
+
+# ---- Go ----
+# Binaries & artifacts
+/go/bin/
+/go/pkg/
+*.exe
+*.test
+*.out
+# Coverage
+coverage.*
+*.coverprofile
+cover.out
+
+# ---- Rust ----
+/target/
+/Cargo.lock
+# Rust toolings
+**/*.rs.bk
+
+# ---- Scripts / misc ----
+*.env
+*.secret
+*.pem
+*.key
+# Node (若腳本夾用到)
+node_modules/
+
+# ---- Git ----
+# Ignore conflict backup files
+*.orig
+# 終端機記錄
+*.log
