@@ -1,8 +1,12 @@
-
 use std::collections::HashMap;
 
 pub struct Solution {}
 
+// ---
+// id: 0001
+// problem: Two Sum
+// source: https://leetcode.com/problems/two-sum
+// ---
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut nums_map = HashMap::new();
