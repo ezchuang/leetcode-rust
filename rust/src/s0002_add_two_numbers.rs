@@ -2,11 +2,6 @@ use crate::util::linked_list::ListNode;
 
 pub struct Solution {}
 
-// ---
-// id: 0002
-// problem: Add Two Numbers
-// source: https://leetcode.com/problems/add-two-numbers
-// ---
 impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         // shadowing
