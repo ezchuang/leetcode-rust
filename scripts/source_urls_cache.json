@@ -14,5 +14,6 @@
   "0061": "https://leetcode.com/problems/rotate-list/",
   "0125": "https://leetcode.com/problems/valid-palindrome/",
   "0242": "https://leetcode.com/problems/valid-anagram/",
-  "0347": "https://leetcode.com/problems/top-k-frequent-elements/"
+  "0347": "https://leetcode.com/problems/top-k-frequent-elements/",
+  "0238": "https://leetcode.com/problems/product-of-array-except-self/"
 }
