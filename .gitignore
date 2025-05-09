@@ -41,7 +41,6 @@ venv/
 # ---- Go ----
 # Binaries & artifacts
 /go/bin/
-/go/pkg/
 *.exe
 *.test
 *.out
