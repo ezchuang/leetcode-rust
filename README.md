@@ -16,6 +16,7 @@
 | 0049 | Group Anagrams |  | [✅](go/pkg/s0049_group_anagrams.go "Go") |  | [✅](problems/0049_group-anagrams.md "Description") | [🔗](https://leetcode.com/problems/group-anagrams/ "Link") |
 | 0061 | Rotate Right |  |  | [✅](rust/src/s0061_rotate_right.rs "Rust") | [✅](problems/0061_rotate-list.md "Description") | [🔗](https://leetcode.com/problems/rotate-list/ "Link") |
 | 0125 | Valid Palindrome |  | [✅](go/pkg/s0125_valid_palindrome.go "Go") |  | [✅](problems/0125_valid-palindrome.md "Description") | [🔗](https://leetcode.com/problems/valid-palindrome/ "Link") |
+| 0128 | Longest Consecutive Sequence | [✅](python/s0128_longest_consecutive_sequence.py "Python") |  |  | [✅](problems/0128_longest-consecutive-sequence.md "Description") | [🔗](https://leetcode.com/problems/longest-consecutive-sequence/ "Link") |
 | 0238 | Product Of Array Except Self | [✅](python/s0238_product_of_array_except_self.py "Python") |  |  | [✅](problems/0238_product-of-array-except-self.md "Description") | [🔗](https://leetcode.com/problems/product-of-array-except-self/ "Link") |
 | 0242 | Valid Anagram | [✅](python/s0242_valid_anagram.py "Python") |  |  | [✅](problems/0242_valid-anagram.md "Description") | [🔗](https://leetcode.com/problems/valid-anagram/ "Link") |
 | 0271 | Encode And Decode Strings | [✅](python/s0271_encode_and_decode_strings.py "Python") |  |  | [✏️](problems/0271_encode-and-decode-strings.todo.md) | [🔗](https://leetcode.com/problems/encode-and-decode-strings/ "Link") |
