@@ -2,26 +2,25 @@ from typing import List
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        nums_set = set(nums)
-        size = len(nums_set)
+        nums_set = set(nums) # {3,4,5,6,7,100,200}
         res_len = 0
 
-        while nums_set:
-            target: int = nums_set.pop()
+        while nums_set: # {100,200}
+            target: int = nums_set.pop() # 6
 
             # find next
-            next_t: int = target + 1
+            next_t: int = target + 1 # 7
             while next_t in nums_set:
                 nums_set.remove(next_t)
-                next_t += 1
+                next_t += 1 # 8
 
             # find prev
-            prev_t: int = target - 1
+            prev_t: int = target - 1 # 5
             while prev_t in nums_set:
                 nums_set.remove(prev_t)
-                prev_t -= 1
+                prev_t -= 1 # 2
 
-            res_len = max(next_t - prev_t - 1, res_len)
+            res_len = max(next_t - prev_t - 1, res_len) # 8-2-1,  0
 
         return res_len
     
