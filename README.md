@@ -17,6 +17,7 @@
 | 0045 | Jump Game Ii |  |  | [✅](rust/src/s0045_jump_game_ii.rs "Rust") | [✅](problems/0045_jump-game-ii.md "Description") | [🔗](https://leetcode.com/problems/jump-game-ii/ "Link") |
 | 0049 | Group Anagrams |  | [✅](go/pkg/s0049_group_anagrams.go "Go") |  | [✅](problems/0049_group-anagrams.md "Description") | [🔗](https://leetcode.com/problems/group-anagrams/ "Link") |
 | 0061 | Rotate Right |  |  | [✅](rust/src/s0061_rotate_right.rs "Rust") | [✅](problems/0061_rotate-list.md "Description") | [🔗](https://leetcode.com/problems/rotate-list/ "Link") |
+| 0121 | Best Time To Buy And Sell Stock | [✅](python/s0121_best_time_to_buy_and_sell_stock.py "Python") |  |  | [✅](problems/0121_best-time-to-buy-and-sell-stock.md "Description") | [🔗](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "Link") |
 | 0125 | Valid Palindrome |  | [✅](go/pkg/s0125_valid_palindrome.go "Go") |  | [✅](problems/0125_valid-palindrome.md "Description") | [🔗](https://leetcode.com/problems/valid-palindrome/ "Link") |
 | 0128 | Longest Consecutive Sequence | [✅](python/s0128_longest_consecutive_sequence.py "Python") |  |  | [✅](problems/0128_longest-consecutive-sequence.md "Description") | [🔗](https://leetcode.com/problems/longest-consecutive-sequence/ "Link") |
 | 0238 | Product Of Array Except Self | [✅](python/s0238_product_of_array_except_self.py "Python") |  |  | [✅](problems/0238_product-of-array-except-self.md "Description") | [🔗](https://leetcode.com/problems/product-of-array-except-self/ "Link") |
