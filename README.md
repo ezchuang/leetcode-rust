@@ -4,6 +4,7 @@
 |----|---------|:--:|:--:|:--:|:---:|:----:|
 | 0001 | Two Sum | [✅](python/s0001_two_sum.py "Python") |  | [✅](rust/src/s0001_two_sum.rs "Rust") | [✅](problems/0001_two-sum.md "Description") | [🔗](https://leetcode.com/problems/two-sum/ "Link") |
 | 0002 | Add Two Numbers |  |  | [✅](rust/src/s0002_add_two_numbers.rs "Rust") | [✅](problems/0002_add-two-numbers.md "Description") | [🔗](https://leetcode.com/problems/add-two-numbers/ "Link") |
+| 0003 | Longest Substring Without Repeating Characters | [✅](python/s0003_longest_substring_without_repeating_characters.py "Python") |  |  | [✅](problems/0003_longest-substring-without-repeating-characters.md "Description") | [🔗](https://leetcode.com/problems/longest-substring-without-repeating-characters/ "Link") |
 | 0009 | Palindrome Number |  |  | [✅](rust/src/s0009_palindrome_number.rs "Rust") | [✅](problems/0009_palindrome-number.md "Description") | [🔗](https://leetcode.com/problems/palindrome-number/ "Link") |
 | 0011 | Container With Most Water | [✅](python/s0011_container_with_most_water.py "Python") |  |  | [✅](problems/0011_container-with-most-water.md "Description") | [🔗](https://leetcode.com/problems/container-with-most-water/ "Link") |
 | 0013 | Roman To Int |  |  | [✅](rust/src/s0013_roman_to_int.rs "Rust") | [✅](problems/0013_roman-to-integer.md "Description") | [🔗](https://leetcode.com/problems/roman-to-integer/ "Link") |
