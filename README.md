@@ -25,3 +25,4 @@
 | 0242 | Valid Anagram | [✅](python/s0242_valid_anagram.py "Python") |  |  | [✅](problems/0242_valid-anagram.md "Description") | [🔗](https://leetcode.com/problems/valid-anagram/ "Link") |
 | 0271 | Encode And Decode Strings | [✅](python/s0271_encode_and_decode_strings.py "Python") |  |  | [✏️](problems/0271_encode-and-decode-strings.todo.md) | [🔗](https://leetcode.com/problems/encode-and-decode-strings/ "Link") |
 | 0347 | Top K Frequent Elements | [✅](python/s0347_top_k_frequent_elements.py "Python") |  |  | [✅](problems/0347_top-k-frequent-elements.md "Description") | [🔗](https://leetcode.com/problems/top-k-frequent-elements/ "Link") |
+| 0424 | Longest Repeating Character Replacement | [✅](python/s0424_longest_repeating_character_replacement.py "Python") |  |  | [✅](problems/0424_longest-repeating-character-replacement.md "Description") | [🔗](https://leetcode.com/problems/longest-repeating-character-replacement/ "Link") |
