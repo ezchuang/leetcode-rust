@@ -21,5 +21,6 @@
   "0011": "https://leetcode.com/problems/container-with-most-water/",
   "0121": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
   "0003": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-  "0424": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+  "0424": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+  "0076": "https://leetcode.com/problems/minimum-window-substring/"
 }
