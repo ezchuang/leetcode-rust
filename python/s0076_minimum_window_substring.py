@@ -9,8 +9,8 @@ class Solution:
         Think: --, Inspired by NeetCode
         Write and debug: 5 min
 
-        Time Complexity: O(n)
-        Space complexity: O(n)
+        Time Complexity: O(n + m)
+        Space complexity: O(m)
         """
         if len(s) < len(t) or len(t) <= 0:
             return ""
@@ -47,8 +47,8 @@ class Solution:
         Think: 1hr
         Write and debug: 1 hr
 
-        Time Complexity: O(n)
-        Space complexity: O(n)
+        Time Complexity: O(n + m)
+        Space complexity: O(m)
         """
         t_dict = defaultdict(int)
         s_dict = defaultdict(deque)
@@ -77,7 +77,7 @@ class Solution:
                 removed = s_dict[right].popleft()
                 # If the removed index is not the current left pointer, no need to update window
                 if removed != l:
-                    continue 
+                    continue
 
             # Check whether we have all required characters in sufficient quantities
             is_sub_String = all(len(s_dict[c]) >= nums for c, nums in t_dict.items())
