@@ -20,11 +20,11 @@ if __name__ == "__main__":
     assert sol.lengthOfLongestSubstring(input1) == expected1, f"Test1 Fail: got {sol.lengthOfLongestSubstring(input1)}"
 
     input2 = "bbbbb"
-    expected1 = 1
-    assert sol.lengthOfLongestSubstring(input2) == expected1, f"Test1 Fail: got {sol.lengthOfLongestSubstring(input2)}"
+    expected2 = 1
+    assert sol.lengthOfLongestSubstring(input2) == expected2, f"Test1 Fail: got {sol.lengthOfLongestSubstring(input2)}"
 
     input3 = "pwwkew"
-    expected2 = 3
-    assert sol.lengthOfLongestSubstring(input3) == expected2, f"Test2 Fail: got {sol.lengthOfLongestSubstring(input3)}"
+    expected3 = 3
+    assert sol.lengthOfLongestSubstring(input3) == expected3, f"Test2 Fail: got {sol.lengthOfLongestSubstring(input3)}"
 
     print("All tests passed!")

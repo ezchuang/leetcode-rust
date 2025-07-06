@@ -31,11 +31,11 @@ if __name__ == "__main__":
     input2 = "AABABBA"
     input_k2 = 1
     expected2 = 4
-    assert sol.characterReplacement(input2, input_k2) == expected1, f"Test1 Fail: got {sol.characterReplacement(input2, input_k2)}"
+    assert sol.characterReplacement(input2, input_k2) == expected2, f"Test1 Fail: got {sol.characterReplacement(input2, input_k2)}"
 
     input3 = "ABBB"
     input_k3 = 1
     expected3 = 4
-    assert sol.characterReplacement(input3, input_k3) == expected2, f"Test2 Fail: got {sol.characterReplacement(input3, input_k3)}"
+    assert sol.characterReplacement(input3, input_k3) == expected3, f"Test2 Fail: got {sol.characterReplacement(input3, input_k3)}"
 
     print("All tests passed!")
