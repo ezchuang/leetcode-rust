@@ -24,5 +24,7 @@
   "0424": "https://leetcode.com/problems/longest-repeating-character-replacement/",
   "0076": "https://leetcode.com/problems/minimum-window-substring/",
   "0033": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-  "0153": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+  "0153": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+  "0141": "https://leetcode.com/problems/linked-list-cycle/",
+  "0206": "https://leetcode.com/problems/reverse-linked-list/"
 }
