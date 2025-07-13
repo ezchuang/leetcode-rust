@@ -26,5 +26,6 @@
   "0033": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
   "0153": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
   "0141": "https://leetcode.com/problems/linked-list-cycle/",
-  "0206": "https://leetcode.com/problems/reverse-linked-list/"
+  "0206": "https://leetcode.com/problems/reverse-linked-list/",
+  "0143": "https://leetcode.com/problems/reorder-list/"
 }
