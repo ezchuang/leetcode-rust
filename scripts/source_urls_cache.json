@@ -40,5 +40,6 @@
   "0023": "https://leetcode.com/problems/merge-k-sorted-lists/",
   "0226": "https://leetcode.com/problems/invert-binary-tree/",
   "0100": "https://leetcode.com/problems/same-tree/",
-  "0104": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+  "0104": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+  "0572": "https://leetcode.com/problems/subtree-of-another-tree/"
 }
