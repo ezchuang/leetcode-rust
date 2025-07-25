@@ -20,6 +20,7 @@ def normalize_filename(filename):
 
     # 將標題轉換成小寫並改成用底線連接單字
     title_snake = '_'.join(word.lower() for word in title.split())
+    title_snake = title_snake.replace("-", "_")
 
     new_name = f's{number}_{title_snake}.py'
     return new_name
@@ -33,6 +34,7 @@ def rename_files_in_directory(directory):
         if new_filename and new_filename != filename:
             new_path = os.path.join(directory, new_filename)
             print(f'Renaming: {filename} → {new_filename}')
+            print(f'✅ [Rename]: {filename} → {new_filename}')
             os.rename(old_path, new_path)
 
 # 使用範例：將 'target_directory' 替換成你的目錄路徑
