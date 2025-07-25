@@ -7,15 +7,20 @@ PY_FOLDER = ROOT / "python"
 
 def normalize_filename(filename):
     # 如果已符合命名規則 s{題號}_{題目}.py，則不更改
-    if re.match(r'^s\d+_[a-zA-Z0-9_]+\.py$', filename):
+    if re.match(r'^s\d{4}_[a-zA-Z0-9_]+\.py$', filename):
         return None
+    
+    # 只有數字開頭沒 s
+    match = re.match(r'^(\d+)_([a-zA-Z0-9_]+)\.py$', filename)
 
     # 嘗試解析格式：3550. Smallest Index With Digit Sum Equal to Index.py
-    match = re.match(r'^(\d+)\.\s+(.*)\.py$', filename)
+    if not match:
+        match = re.match(r'^(\d+)\.\s+(.*)\.py$', filename)
+
     if not match:
         return None
 
-    number = match.group(1)
+    number = match.group(1).zfill(4)
     title = match.group(2)
 
     # 將標題轉換成小寫並改成用底線連接單字

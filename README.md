@@ -12,6 +12,7 @@
 | 0019 | Remove Nth Node From End Of List | [✅](python/s0019_remove_nth_node_from_end_of_list.py "Python") |  |  | [✅](problems/0019_remove-nth-node-from-end-of-list.md "Description") | [🔗](https://leetcode.com/problems/remove-nth-node-from-end-of-list/ "Link") |
 | 0020 | Valid Parentheses | [✅](python/s0020_valid_parentheses.py "Python") |  | [✅](rust/src/s0020_valid_parentheses.rs "Rust") | [✅](problems/0020_valid-parentheses.md "Description") | [🔗](https://leetcode.com/problems/valid-parentheses/ "Link") |
 | 0021 | Merge Two Lists | [✅](python/s0021_merge_two_sorted_lists.py "Python") |  | [✅](rust/src/s0021_merge_two_lists.rs "Rust") | [✅](problems/0021_merge-two-sorted-lists.md "Description") | [🔗](https://leetcode.com/problems/merge-two-sorted-lists/ "Link") |
+| 0023 |  |  |  |  | [✅](problems/0023_merge-k-sorted-lists.md "Description") |  |
 | 0024 | Swap Pairs |  |  | [✅](rust/src/s0024_swap_pairs.rs "Rust") | [✅](problems/0024_swap-nodes-in-pairs.md "Description") | [🔗](https://leetcode.com/problems/swap-nodes-in-pairs/ "Link") |
 | 0031 | Next Permutation |  |  | [✅](rust/src/s0031_next_permutation.rs "Rust") | [✅](problems/0031_next-permutation.md "Description") | [🔗](https://leetcode.com/problems/next-permutation/ "Link") |
 | 0033 | Search In Rotated Sorted Array | [✅](python/s0033_search_in_rotated_sorted_array.py "Python") |  |  | [✅](problems/0033_search-in-rotated-sorted-array.md "Description") | [🔗](https://leetcode.com/problems/search-in-rotated-sorted-array/ "Link") |
