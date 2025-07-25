@@ -43,5 +43,6 @@
   "0104": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
   "0572": "https://leetcode.com/problems/subtree-of-another-tree/",
   "0235": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
-  "0102": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+  "0102": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "0098": "https://leetcode.com/problems/validate-binary-search-tree/"
 }
